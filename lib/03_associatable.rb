@@ -47,7 +47,6 @@ module Associatable
 
   def has_many(name, options = {})
     options = HasManyOptions.new(name, options[:class_name], options)
-    p options
     define_method(name) do
       fk = send(options.foreign_key)
       pk = options.primary_key
