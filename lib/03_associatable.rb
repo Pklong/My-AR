@@ -1,5 +1,6 @@
 require_relative '02_searchable'
 require 'active_support/inflector'
+require 'byebug'
 
 # Phase IIIa
 class AssocOptions
@@ -46,11 +47,11 @@ module Associatable
   end
 
   def has_many(name, options = {})
-    options = HasManyOptions.new(name, options[:class_name], options)
+    options = HasManyOptions.new(name, self.name.to_s, options)
     define_method(name) do
-      fk = send(options.foreign_key)
-      pk = options.primary_key
-      options.model_class.where({fk => pk}).first
+      fk = options.foreign_key
+      pk = send(options.primary_key)
+      options.model_class.where({fk => pk})
     end
   end
 
