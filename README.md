@@ -2,10 +2,15 @@
 
 ### Description
 
-MyAR is a project I built to learn more about the Rails ORM, ActiveRecord.
+MyAR is a project I built to learn more about ORM and ActiveRecord.
 
-Each file in lib/ corresponds to ActiveRecord functionality:
+Each file in lib/ corresponds to a piece of ActiveRecord:
 
-* sql_object is responsible for the ActiveRecord::Base logic
-* searchable handles the packages SQL queries into bite-sized methods, such as ::where
-* associatable handles the relationships between objects in different tables. Methods here include belongs_to, has_many and has_one_through
+* Sql_object represents ActiveRecord::Base
+* Searchable handles the SQL queries, such as ::where
+* Associatable creates ActiveRecord Associations, including belongs_to, has_many and has_one_through
+
+### To Do
+
+- [ ] Expand Searchable
+- [ ] Integrate with my rails-lite project
