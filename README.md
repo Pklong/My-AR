@@ -1,8 +1,8 @@
-# My ActiveRecord
+# Gisa
 
 ### Description
 
-MyAR is a project I built to learn more about ORM and ActiveRecord.
+Gisa is a project I built to learn more about ORMs and ActiveRecord.
 
 Each file in lib/ corresponds to a piece of ActiveRecord:
 
@@ -13,4 +13,4 @@ Each file in lib/ corresponds to a piece of ActiveRecord:
 ### To Do
 
 - [ ] Expand Searchable
-- [ ] Integrate with my rails-lite project
+- [ ] Integrate with Geralf
